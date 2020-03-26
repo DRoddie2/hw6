@@ -3,6 +3,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "refcount.h"
 
 int main(){
@@ -13,7 +14,7 @@ int main(){
     /* Create array of nodes to keep track of the nodes mentioned in the assignment statements to avoid duplicates */
     Node** nodes = (Node**)malloc(sizeof(Node*)*(N+1));
     for(int i = 0; i < (N+1); i++){
-        nodes[i] = NULL:
+        nodes[i] = NULL;
     }
 
     /* Parse through assignment statements */
